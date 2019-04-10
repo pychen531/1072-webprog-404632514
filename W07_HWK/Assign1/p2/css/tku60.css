@@ -1,0 +1,46 @@
+#container {
+    width: 630px;
+    height: 580px;
+    border: 5px solid purple;
+    text-align: center;
+    margin: 0% auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+h1{
+    width: 100%;
+    margin: 0% auto;
+}
+
+#player {
+    width: auto;
+    height: 480px;
+}
+
+#heading {
+    width: auto;
+    height: 10%;
+    background-color: rgba(131, 118, 43, 0.692);
+}
+
+#menu {
+    width: auto;
+    height: 5%;
+    background-color: rgba(190, 172, 69, 0.692);
+    padding: 1%;
+}
+
+#menu ul {
+    margin: 0% auto;
+    float: left;
+    padding-left: 0%;
+}
+
+#menu li {
+    float: left;
+    list-style: none;
+    padding: 0% 1%;
+}
