@@ -1,0 +1,71 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#container {
+    width: 950px;
+    height: 550px;
+}
+
+#heading {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+ul {
+    margin: 0%;
+    padding: 0%;
+}
+
+ul li {
+    list-style: none;
+    width: 7%;
+    height: 20px;
+    float: right;
+    margin: 0.5%;
+    margin-bottom: 1%;
+    background-color: lightpink;
+}
+
+ul li:hover {
+    background-color: orangered;
+}
+
+#menu1 {
+    width: 20%;
+    height: 400px;
+    float: left;
+    background-color: cadetblue;
+}
+
+#menu2 {
+    width: 20%;
+    height: 400px;
+    float: right;
+    background-color: aqua;
+}
+
+#section {
+    width: 60%;
+    height: 400px;
+    float: left;
+    background-color:lightgray;
+}
+
+#footer {
+    width: 100%;
+    height: 50px;
+    background-color: darkslategray;
+}

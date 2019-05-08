@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .clearfix {
+            clear: both;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: bisque;
+        }
+
+        #logo {
+            width: 20%;
+            height: 100px;
+            background-color: white;
+            float: left;
+            margin: 0% auto;
+        }
+
+        #logo img {
+            margin: 1% 25%;
+        }
+
+        aside {
+            width: 20%;
+            height: 600px;
+            background-color: lightgray;
+            float: left;
+        }
+
+        nav {
+            width: auto;
+            height: 85%;
+            background-color: lightskyblue;
+            margin: 5%;
+            padding: 10%;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        article {
+            width: 80%;
+            height: 600px;
+            background-color: lightpink;
+            float: right;
+        }
+
+        footer {
+            width: 100%;
+            height: 70px;
+            background-color: lemonchiffon;
+        }
+
+        #display {
+            width: 51%;
+            height: 65%;
+            background-color: lightsteelblue;
+            margin: 2% auto;
+        }
+
+        iframe {
+            margin: 0% auto;
+        }
+
+        #picContainer {
+            width: 90%;
+            height: 20%;
+            background-color: linen;
+            margin: 2% auto;
+        }
+
+        ul {
+            margin: 0%;
+        }
+
+        .small_pic {
+            /* list-style-type: none; */
+            width: 15%;
+            height: 60%;
+            margin: 2.5% 1%;
+            margin-left: 3.5%;
+            background-color: lightgrey;
+            float: left;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+    <script>
+        function goPage(index) {
+            let p = document.getElementById("display");
+            let q;
+            let qq;
+            let i = 1;
+            for (i = 1; i < 6; i++) {
+                qq = document.getElementById("pic" + i);
+                qq.style = "display:visible; border:0px";
+            }
+            switch (index) {
+                case 1:
+                    q = document.getElementById("pic1");
+                    q.style = "border: none";
+                    p.innerHTML = '<iframe width="513px" height="390px" src="https://www.youtube.com/embed/RechrtUxfQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+                    q.style = "border:5px solid purple;";
+                    // q.innerHTML = '<iframe width="145px" height="85px" src="images/TKU1.png" frameborder="0"></iframe>'
+                    break;
+                case 2:
+                    q = document.getElementById("pic2");
+                    q.style = "border: none";
+                    p.innerHTML = '<iframe width="513px" height="390px" src="https://www.youtube.com/embed/MRWX49Furew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+                    q.style = "border:5px solid purple;";
+                    break;
+                case 3:
+                    q = document.getElementById("pic3");
+                    p.innerHTML = '<iframe width="513px" height="390px" src="https://www.youtube.com/embed/METhdbL_iMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+                    q.style = "border:5px solid purple;";
+                    break;
+                case 4:
+                    q = document.getElementById("pic4");
+                    p.innerHTML = '<iframe width="513px" height="390px" src="https://www.youtube.com/embed/ZyDbq-lEKTo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+                    q.style = "border:5px solid purple;";
+                    break;
+                case 5:
+                    q = document.getElementById("pic5");
+                    p.innerHTML = '<iframe width="513px" height="390px" src="https://www.youtube.com/embed/NlsrJbVvjaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+                    q.style = "border:5px solid purple;";
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="tku_logo.jpg" width="auto" height="90px"></img>
+        </div>
+    </header>
+    <div class="clearfix"></div>
+    <aside>
+        <nav>
+            <a href="###" onclick="goPage(1)">淡江大戲</a>
+            <p>part1</p>
+            <p>part2</p>
+            <p>part3</p>
+            <p>part4</p>
+            <p>part5</p>
+            <br>
+            <a href="###">相簿</a>
+            <p>paparaya-1</p>
+            <p>paparaya-2</p>
+            <p>paparaya-3</p>
+        </nav>
+    </aside>
+    <article>
+        <div id="display">
+
+        </div>
+        <div id="picContainer">
+            <div class="small_pic" onclick="goPage(1)">
+                <img id="pic1" class="imgg" style="display:none" src="images/TKU1.png" width="145px"
+                    height="85px"></img>
+            </div>
+            <div class="small_pic" onclick="goPage(2)">
+                <img id="pic2" class="imgg" style="display:none" src="images/TKU2.png" width="145px"
+                    height="85px"></img>
+            </div>
+            <div class="small_pic" onclick="goPage(3)">
+                <img id="pic3" class="imgg" style="display:none" src="images/TKU3.png" width="145px"
+                    height="85px"></img>
+            </div>
+            <div class="small_pic" onclick="goPage(4)">
+                <img id="pic4" class="imgg" style="display:none" src="images/TKU4.png" width="145px"
+                    height="85px"></img>
+            </div>
+            <div class="small_pic" onclick="goPage(5)">
+                <img id="pic5" class="imgg" style="display:none" src="images/TKU5.png" width="145px"
+                    height="85px"></img>
+            </div>
+
+        </div>
+    </article>
+    <div class="clearfix"></div>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

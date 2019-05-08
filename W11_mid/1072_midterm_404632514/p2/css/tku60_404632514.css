@@ -1,0 +1,25 @@
+#container {
+    width: 545px;
+    height: 245px;
+    border: 5px solid black;
+}
+
+
+
+button {
+    margin: 2%;
+}
+
+aside {
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: mistyrose;
+}
+
+#display {
+    width: 80%;
+    height: 100%;
+    float: right;
+    background-color: black;
+}
